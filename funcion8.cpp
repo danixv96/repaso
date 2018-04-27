@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
+int main(){
+
+=======
 void Carga(float altura[5]){
     int x;
 
@@ -32,6 +36,7 @@ int main(){
 
     Carga(altura);
     Promedio(altura);
+>>>>>>> ee4cc89780127eb1ea86343c559c1520fda002f0
 
     return EXIT_SUCCESS;
 }

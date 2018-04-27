@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
 struct pais {
     char nombre[40];
     int cantidadhab;
@@ -37,6 +38,32 @@ int main(){
 
     Carga(&p3);
     Imprime(p3);
+=======
+#define TAM 5
+
+void Carga(float *p){
+    int i;
+
+    for(i=0; i<TAM; i++){
+	printf("Numero: ");
+	scanf("%f", &p[i]);
+    }
+}
+
+void Imprime(float *p){
+    int i;
+
+    for(i=0; i<TAM; i++)
+	printf("%.2f\n", p[i]);
+}
+
+int main(){
+
+    float vec[TAM];
+
+    Carga(vec);
+    Imprime(vec);
+>>>>>>> a8ff70784ee843bcb2b82f63dd35d379a1ad86c5
 
     return EXIT_SUCCESS;
 }
